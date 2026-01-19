@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pen-impound</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2 id="header-title">Impound System</h2>
+            <button class="close-btn" id="close-btn" type="button">×</button>
+        </div>
+        <div class="main-container">
+            <div class="sidebar" id="sidebar">
+                <div class="sidebar-title">Police/Tow Controls</div>
+                <div class="search-box">
+                    <input type="text" class="search-input" id="search-input" placeholder="Search anything..."/>
+                </div>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" type="button" data-filter="all">All Vehicles</button>
+                    <button class="filter-btn" type="button" data-filter="today">Today's Impounds</button>
+                    <button class="filter-btn" type="button" data-filter="week">This Week</button>
+                    <button class="filter-btn" type="button" data-filter="overdue">Overdue (30+ days)</button>
+                    <button class="filter-btn" id="logs-btn" type="button" data-filter="logs">📋 Activity Logs</button>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-value" id="total-impounds">0</div>
+                        <div class="stat-label">Total Impounds</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="total-fees">$0</div>
+                        <div class="stat-label">Total Fees</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content" id="content"></div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>

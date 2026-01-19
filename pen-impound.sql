@@ -1,0 +1,25 @@
+CREATE TABLE IF NOT EXISTS `vehicle_impounds` (
+    `id` INT NOT NULL AUTO_INCREMENT,
+    `plate` VARCHAR(12) NOT NULL,
+    `model` VARCHAR(64) NOT NULL,
+    `citizenid` VARCHAR(50) NOT NULL,
+    `owner_name` VARCHAR(100) NOT NULL,
+    `fuel` INT NOT NULL DEFAULT 0,
+    `officer` VARCHAR(100) NOT NULL,
+    `officer_citizenid` VARCHAR(50) NOT NULL,
+    `job` VARCHAR(50) NOT NULL,
+    `reason` TEXT NOT NULL,
+    `report_id` VARCHAR(50) DEFAULT NULL,
+    `impound_location` VARCHAR(50) DEFAULT NULL,
+    `vehicle_props` LONGTEXT NOT NULL,
+    `released` TINYINT(1) NOT NULL DEFAULT 0,
+    `released_at` TIMESTAMP NULL DEFAULT NULL,
+    `timestamp` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+
+    PRIMARY KEY (`id`),
+    KEY `idx_plate` (`plate`),
+    KEY `idx_citizenid` (`citizenid`),
+    KEY `idx_released` (`released`),
+    KEY `idx_timestamp` (`timestamp`),
+    KEY `idx_report_id` (`report_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
