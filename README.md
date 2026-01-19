@@ -6,8 +6,8 @@ Includes staff tooling, full impound history, advanced search, and activity logs
 
 # Preview
 
-<img width="666" height="652" alt="Screenshot 2026-01-18 203329" src="https://github.com/user-attachments/assets/fc421dc9-a57c-42a3-8d6f-99783802c1b8" />
-<img width="698" height="660" alt="Screenshot 2026-01-18 203356" src="https://github.com/user-attachments/assets/6d244079-5e84-4c9c-aa85-89595082cc68" />
+<img width="666" height="652" alt="Screenshot 2026-01-18 203329" src="https://github.com/user-attachments/assets/d632463c-83dc-4575-9400-0dea0faa35f1" />
+<img width="698" height="660" alt="Screenshot 2026-01-18 203356" src="https://github.com/user-attachments/assets/cdd317b8-0cc6-409f-bc34-cf5850d8d174" />
 
 Police / Tow UI - https://streamable.com/718rr5
 Normal User - https://streamable.com/sx145t
